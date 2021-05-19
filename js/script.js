@@ -49,9 +49,9 @@ var app = new Vue(
                 // console.log(this.toDoList);
             },
             addToDo: function () {
-                if (this.add.trim().length > 0) {
+                if (this.add.trim().length > 0 && isNaN(this.add)) {
                     this.toDoList.push({
-                        testo: this.add,
+                        testo: this.add[0].toUpperCase() + this.add.toLowerCase().slice(1),
                         completed: false
                     });
                 }
