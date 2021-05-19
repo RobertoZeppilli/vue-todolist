@@ -12,6 +12,7 @@
 
 .container {
     min-height: 500px;
+    min-width: 400px;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -29,13 +30,18 @@
     text-shadow: 1px 1px hsl(0, 0%, 80%);
 }
 
+.add-item {
+    display: flex;
+    justify-content: space-between;
+}
 .add-item input {
-    width: 200px;
+    flex-grow: 1;
     padding: 10px 0;
 }
 .add-item button {
     display: inline-block;
     padding: 10px;
+    margin-left: 5px;
     font-weight: bold;
     color: hsl(118, 27%, 56%);
     transition: transform .2s ease-in-out;
